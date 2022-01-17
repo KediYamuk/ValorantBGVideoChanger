@@ -6,3 +6,10 @@ Written in Python
 You need to run this script instead of launching Riot Client, it will launch the Riot Client itself. It will not work if you run Riot Client first. (Will be fixed)
 
 Further information will be added.
+
+
+
+
+
+
+This script/software is licensed under the GNU General Public License v3.0
