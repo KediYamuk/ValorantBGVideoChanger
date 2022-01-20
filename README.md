@@ -1,9 +1,9 @@
 # ValorantBGVideoChanger
-Replace Valorant's main menu background video. (WIP, unefficent coding so it will take some time.)
+Replace Valorant's main menu background video. (WIP xd)
 
 Written in Python
 
-You need to run this script instead of launching Riot Client, it will launch the Riot Client itself. It will not work if you run Riot Client first. (Will be fixed)
+Make sure Valorant is updated before you run the script.
 
 Further information will be added.
 
