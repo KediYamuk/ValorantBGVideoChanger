@@ -3,11 +3,18 @@ Replace Valorant's main menu background video. (WIP xd)
 
 Written in Python
 
-Make sure Valorant is updated before you run the script.
-
-Further information will be added.
-
 Sorry you had to lay your eyes on this atrocity, lmao
+
+**README:**
+
+You need to make sure that Riot Client is already running and Valorant is updated (This is important because every time you relaunch Riot Client, it replaces your video with
+the original one via "updates".)
+
+If you don't know how to copy the path of a video, just right-click the video and click "Copy as path".
+
+If you didn't change the downloading destination while downloading Riot Client, the original video file should be at "C:\Riot Games\VALORANT\live\ShooterGame\Content\Movies\Menu\HomeScreen.mp4".
+
+You only need to enter the paths once unless you delete "pathdatabase.txt" and "pathdatabase1.txt".
 
 
 
