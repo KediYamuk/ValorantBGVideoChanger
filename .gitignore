@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Database text files
+pathdatabase.txt/
+pathdatabase1.txt
