@@ -1,7 +1,7 @@
 # ValorantBGVideoChanger
 #### Replace Valorant's main menu background video. (WIP xd)
 
-IT'S CURRENTLY USABLE, MIGHT BE BUGGY
+IT'S CURRENTLY **NOT** USABLE UNLESS YOU USE AN IDE, AND IM TOO LAZY TO FIX IT
 
 Written in Python\
 Sorry you had to lay your eyes on this.. thing, lmao
