@@ -7,8 +7,8 @@ def checkVariable():
     global defined
     global valorantvideo
     try:
-        dbr0 = open("~/pathdatabase.txt", "r+") 
-        dbr1 = open("~/pathdatabase1.txt", "r+")
+        dbr0 = open("pathdatabase.txt", "r+") 
+        dbr1 = open("pathdatabase1.txt", "r+")
         pathvid = dbr0.read()
         valorantvideo = dbr1.read()
 
@@ -31,7 +31,7 @@ def definePath():
     pathvid = input()
 
  
-    db = open("~/pathdatabase.txt", "w+")
+    db = open("pathdatabase.txt", "w+")
     db.write(pathvid)
     db.close()
     #stores the path to user vid in pathdatabase.txt
@@ -43,7 +43,7 @@ def defineValPath():
     print("Please paste the full path of the Valorant's original background video. Read README.txt for more information.")
     valorantvideo = input()
 
-    db1 = open("~/pathdatabase1.txt", "w+")
+    db1 = open("pathdatabase1.txt", "w+")
     db1.write(valorantvideo)
     db1.close()
     #stores the path to user original valorant video in pathdatabase1.txt
