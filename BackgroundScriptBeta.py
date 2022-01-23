@@ -7,8 +7,8 @@ def checkVariable():
     global defined
     global valorantvideo
     try:
-        dbr0 = open("pathdatabase.txt", "r+") 
-        dbr1 = open("pathdatabase1.txt", "r+")
+        dbr0 = open("~/pathdatabase.txt", "r+") 
+        dbr1 = open("~/pathdatabase1.txt", "r+")
         pathvid = dbr0.read()
         valorantvideo = dbr1.read()
 
@@ -31,7 +31,7 @@ def definePath():
     pathvid = input()
 
  
-    db = open("pathdatabase.txt", "w+")
+    db = open("~/pathdatabase.txt", "w+")
     db.write(pathvid)
     db.close()
     #stores the path to user vid in pathdatabase.txt
@@ -43,7 +43,7 @@ def defineValPath():
     print("Please paste the full path of the Valorant's original background video. Read README.txt for more information.")
     valorantvideo = input()
 
-    db1 = open("pathdatabase1.txt", "w+")
+    db1 = open("~/pathdatabase1.txt", "w+")
     db1.write(valorantvideo)
     db1.close()
     #stores the path to user original valorant video in pathdatabase1.txt
@@ -69,7 +69,7 @@ choicecompleted = False
 if defined == True:
     while choicecompleted == False:
 
-        print("What do you want to do?\nType 2 if you want to change the path to the Valorant background file.\nType 1 if you want to change the path to the replacement background video.\nType 0 if you want to execute the script and quit.\nType 9 if you want to quit without exectuting the script.")
+        print("What do you want to do?\nType 2 if you want to change the path to the original background video file.\nType 1 if you want to change the path to the replacement background video file.\nType 0 if you want to execute the script and quit.\nType 9 if you want to quit without exectuting the script.")
         userinputchoice = input()
 
         if userinputchoice == "0":
