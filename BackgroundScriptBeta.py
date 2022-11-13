@@ -40,7 +40,7 @@ def defineValPath():
     global pathvid
     global defined
     global valorantvideo
-    print("Please paste the full path of the Valorant's original background video. Read README.txt for more information.")
+    print("Please paste the full path of the Valorant's original background video. Read README.md for more information.")
     valorantvideo = input()
 
     db1 = open("pathdatabase1.txt", "w+")
