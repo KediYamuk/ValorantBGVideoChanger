@@ -15,7 +15,7 @@ the original one via "updates".)
 
 - If you didn't change the downloading destination while downloading Riot Client, the original video file should be at "C:\Riot Games\VALORANT\live\ShooterGame\Content\Movies\Menu\HomeScreen.mp4".
 
-- You only need to enter the paths once unless you delete "pathdatabase.txt" and "pathdatabase1.txt".
+- You only need to enter the paths once unless you delete "pathdatabase.txt" and "pathdatabase1.txt" (ik this is a bad way to do it shut up).
 
 
 
