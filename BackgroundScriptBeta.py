@@ -2,16 +2,18 @@ import os, sys, shutil
 
 print('Reminder: the "pathdatabase" files are a part of this script.')
 
-def checkVariable():
+def getVariable():
     global pathvid
     global defined
     global valorantvideo
     try:
+        #read video path from file
         dbr0 = open("pathdatabase.txt", "r+") 
         dbr1 = open("pathdatabase1.txt", "r+")
         pathvid = dbr0.read()
         valorantvideo = dbr1.read()
 
+        #remove quotation marks
         pathvid = pathvid.replace('"',"")
         valorantvideo = valorantvideo.replace('"',"")
 
@@ -21,49 +23,45 @@ def checkVariable():
         defined = True
     except:
         defined = False
-    #get pathvid from file
 
 def definePath():
     global pathvid
-    global defined
-    global valorantvideo
     print("Please paste the full path of the video you want to see in the Valorant main menu below.")
     pathvid = input()
 
- 
+    #write custom vid path into file
     db = open("pathdatabase.txt", "w+")
     db.write(pathvid)
+    print("Path saved.")
     db.close()
-    #stores the path to user vid in pathdatabase.txt
  
 def defineValPath():
-    global pathvid
-    global defined
     global valorantvideo
     print("Please paste the full path of the Valorant's original background video. Read README.md for more information.")
     valorantvideo = input()
 
+    #write original vid path into file
     db1 = open("pathdatabase1.txt", "w+")
     db1.write(valorantvideo)
+    print("Path saved.")
     db1.close()
-    #stores the path to user original valorant video in pathdatabase1.txt
+
 
 def preScript():
-    global pathvid
-    global defined
-    global valorantvideo
-    if defined == False:
         definePath()
         defineValPath()
-        checkVariable()
+        getVariable()
 
+        print("Path saved to file. This message shouldn't appear if you had already saved it and didn't delete the pathdatabase files.")
 
 
 #actual script:
 
-checkVariable()
-preScript()
+getVariable()
+while defined == False:
+    preScript()
 
+print("Path read from file succesfully.")
 
 choicecompleted = False
 if defined == True:
