@@ -52,8 +52,6 @@ def preScript():
         defineValPath()
         getVariable()
 
-        print("Path saved to file. This message shouldn't appear if you had already saved it and didn't delete the pathdatabase files.")
-
 
 #actual script:
 
